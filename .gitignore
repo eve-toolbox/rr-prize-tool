@@ -3,3 +3,7 @@
 Homestead.yaml
 .env
 .DS_Store
+/bootstrap/compiled.php
+.env.*.php
+.env.php
+.env
