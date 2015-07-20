@@ -4,6 +4,10 @@ namespace rrPrizeTool;
 
 use Illuminate\Database\Eloquent\Model;
 
+use rrPrizeTool\Account;
+use rrPrizeTool\Drawing;
+use rrPrizeTool\Roam;
+
 class Account_Drawing extends Model {
 
 	protected $table = 'accounts_drawings';

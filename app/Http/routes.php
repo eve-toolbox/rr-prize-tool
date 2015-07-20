@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 /*
 |--------------------------------------------------------------------------
@@ -11,15 +11,4 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
-
-
-Route::resource('account', 'AccountController');
-Route::resource('item', 'ItemController');
-Route::resource('prize', 'PrizeController');
-Route::resource('drawing', 'DrawingController');
-Route::resource('roam', 'RoamController');
-Route::resource('account_drawing', 'Account_DrawingController');
+Route::get('/', 'pageController@home');

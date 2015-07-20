@@ -1,0 +1,217 @@
+/* Global Styles */
+/* Table of Contents */
+/* Variable Declarations */
+/* 1. Color Variable Declarations */
+/* 2. Font Variable Declarations */
+/* 3. Breakpoint Variable Declarations */
+/* II. Global Styling */
+/* 1. Font Styling */
+/* 2. Container Styling */
+/* ------------------------------------------------------------- */
+/* I. Variable Declarations */
+/* ------------------------------------------------------------- */
+/* 1. Color Variable Declarations */
+/* 2. Font Variable Declarations */
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Oswald:300,400,700);
+/* 3. Breakpoint Variable Declarations */
+/* ------------------------------------------------------------- */
+/* I. Default Styling */
+/* ------------------------------------------------------------- */
+/* 1. Font Styling */
+body, p {
+  font-family: "PT Sans", sans-serif; }
+
+.header-font {
+  font-family: "Oswald", sans-serif; }
+
+/* 2. Container Styling */
+.container {
+  padding: 5px 12.5%; }
+
+/* 3. Link Reset */
+a, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
+/* Module Styles */
+header {
+  width: 100%;
+  background-color: #32475B; }
+  header .container-1-2 {
+    margin: 5px 25%; }
+    header .container-1-2 .wordmark {
+      position: relative;
+      top: 5px; }
+      @media all and (max-width: 30em) {
+        header .container-1-2 .wordmark {
+          top: 2px;
+          width: 105px; } }
+  header .avatar {
+    float: right;
+    position: relative;
+    right: 10px; }
+    header .avatar img {
+      width: 65px;
+      border-radius: 50%;
+      position: relative;
+      left: 10px; }
+      @media all and (max-width: 30em) {
+        header .avatar img {
+          width: 45px;
+          left: 10px; } }
+    header .avatar .nav {
+      float: right; }
+      header .avatar .nav li {
+        display: inline;
+        color: white;
+        font-family: "PT Sans", sans-serif;
+        font-size: 1.1em; }
+
+.roam-container .drawing {
+  position: absolute;
+  width: 35px;
+  height: 100px;
+  z-index: 1; }
+  @media all and (max-width: 30em) {
+    .roam-container .drawing {
+      width: 20px; } }
+  .roam-container .drawing h3 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: white;
+    background-color: #32475B;
+    text-align: center; }
+    @media all and (max-width: 30em) {
+      .roam-container .drawing h3 {
+        font-size: 0.8em; } }
+  .roam-container .drawing .dropdown {
+    width: 35px;
+    height: 20px;
+    position: relative;
+    bottom: 15px;
+    background-color: #5C83A7; }
+    @media all and (max-width: 30em) {
+      .roam-container .drawing .dropdown {
+        height: 0; } }
+    .roam-container .drawing .dropdown::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid #32475B;
+      position: absolute;
+      top: 3px;
+      left: 7.5px; }
+      @media all and (max-width: 30em) {
+        .roam-container .drawing .dropdown::after {
+          border: 0; } }
+    .roam-container .drawing .dropdown:hover, .roam-container .drawing .dropdown:focus > ol {
+      display: block; }
+    .roam-container .drawing .dropdown ol {
+      display: none;
+      list-style: none;
+      padding: 0;
+      position: relative;
+      top: 20px;
+      text-align: center;
+      background-color: #5C83A7; }
+      @media all and (max-width: 30em) {
+        .roam-container .drawing .dropdown ol {
+          display: block;
+          top: 3px;
+          width: 20px;
+          font-size: 0.8em; } }
+      .roam-container .drawing .dropdown ol li {
+        font-family: "Oswald", sans-serif;
+        color: white;
+        font-weight: 300;
+        border-top: thin solid #8E9BA7; }
+        .roam-container .drawing .dropdown ol li:hover {
+          background-color: #32475B; }
+.roam-container .roam-header {
+  background-color: #32475B; }
+  .roam-container .roam-header h2 {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    padding-left: 5%;
+    margin: 0px 0px 10px 0px;
+    position: relative;
+    top: 5px; }
+    @media all and (max-width: 41.875em) {
+      .roam-container .roam-header h2 {
+        margin: 10px 0px 8px 0px; } }
+    .roam-container .roam-header h2 .prefix {
+      font-weight: 300; }
+      @media all and (max-width: 41.875em) {
+        .roam-container .roam-header h2 .prefix {
+          font-weight: 300;
+          font-size: 0.5em;
+          position: absolute;
+          top: -11px; } }
+  .roam-container .roam-header .roam-dropdown {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #243341;
+    float: right;
+    position: relative;
+    right: 5%;
+    top: 5px; }
+    .roam-container .roam-header .roam-dropdown::after {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 15px solid #32475B;
+      position: absolute;
+      top: 12px;
+      left: 7.5px; }
+.roam-container .roam-body {
+  position: relative;
+  background-color: #f4f4f4;
+  min-height: 150px;
+  height: 150px; }
+  .roam-container .roam-body .prizes {
+    margin-left: 10%;
+    margin-top: 18px; }
+    .roam-container .roam-body .prizes .prize {
+      background-color: #E8E8E8;
+      display: inline-block;
+      margin-right: 50px; }
+      .roam-container .roam-body .prizes .prize .prize-image {
+        width: 58px;
+        float: left;
+        padding-top: 2.5px;
+        padding-left: 6px; }
+      .roam-container .roam-body .prizes .prize .item-info {
+        overflow: hidden;
+        padding-left: 10px;
+        float: left;
+        padding-top: 6px; }
+        .roam-container .roam-body .prizes .prize .item-info h4, .roam-container .roam-body .prizes .prize .item-info p {
+          margin: 0; }
+        .roam-container .roam-body .prizes .prize .item-info h4 {
+          font-size: 0.9em; }
+        .roam-container .roam-body .prizes .prize .item-info p {
+          font-size: 0.7em; }
+        @media all and (max-width: 30em) {
+          .roam-container .roam-body .prizes .prize .item-info {
+            display: none; } }
+      .roam-container .roam-body .prizes .prize .winner {
+        float: left;
+        background-color: #32475B;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        padding-top: 10px;
+        position: relative;
+        left: 27px; }
+        .roam-container .roam-body .prizes .prize .winner img {
+          border-radius: 50%;
+          width: 50px;
+          padding: 5px;
+          padding-bottom: 2px; }
+
+/*# sourceMappingURL=master.css.map */

@@ -1,0 +1,208 @@
+.roam-container{
+  .drawing{
+    position:absolute;
+    width:35px;
+    height:100px;
+    z-index: 1;
+
+    @media all and (max-width: $breakpoint-small){
+      width:20px;
+    }
+
+    h3{
+      font-family:$header-font;
+      font-weight:400;
+      color:white;
+      background-color:$first-color;
+      text-align: center;
+
+      @media all and (max-width: $breakpoint-small){
+        font-size:0.8em;
+      }
+    }
+
+    .dropdown{
+
+      width:35px;
+      height:20px;
+      position: relative;
+      bottom:15px;
+
+
+      background-color: $fourth-color;
+
+      @media all and (max-width: $breakpoint-small){
+        height:0;
+      }
+
+      &::after{
+        content:'';
+
+        width:0;
+        height:0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid $first-color;
+
+        position: absolute;
+        top: 3px;
+        left: 7.5px;
+
+        @media all and (max-width: $breakpoint-small){
+          border:0;
+        }
+      }
+
+      &:hover, &:focus > ol{
+        display: block;
+      }
+
+      ol{
+        @media all and (max-width: $breakpoint-small){
+          display:block;
+          top:3px;
+          width:20px;
+          font-size:0.8em;
+        }
+        display:none;
+        list-style: none;
+        padding: 0;
+
+        position: relative;
+        top:20px;
+
+        text-align: center;
+
+        background-color: $fourth-color;
+
+        li{
+          font-family: $header-font;
+          color:white;
+          font-weight:300;
+          border-top:thin solid $sixth-color;
+
+          &:hover{
+            background-color: $first-color;
+          }
+        }
+      }
+    }
+  }
+
+  .roam-header{
+    background-color:$first-color;
+    h2{
+      color:white;
+      font-family:$header-font;
+      font-weight:400;
+
+      padding-left:5%;
+      margin:0px 0px 10px 0px;
+      position: relative;
+      top:5px;
+
+      @media all and (max-width: $breakpoint-medium){
+        margin:10px 0px 8px 0px;
+      }
+      .prefix{
+
+        font-weight:300;
+        @media all and (max-width:$breakpoint-medium){
+          font-weight:300;
+          font-size:0.5em;
+
+          position:absolute;
+          top:-11px;
+        }
+      }
+    }
+    .roam-dropdown{
+      cursor: pointer;
+      width:35px;
+      height:35px;
+      border-radius: 50%;
+      background-color:$third-color;
+
+
+      float:right;
+      position: relative;
+      right:5%;
+      top:5px;
+
+      &::after{
+        content:'';
+
+        width:0;
+        height:0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 15px solid $first-color;
+
+        position: absolute;
+        top: 12px;
+        left: 7.5px;
+      }
+    }
+  }
+
+  .roam-body{
+    position: relative;
+    background-color: #f4f4f4;
+
+    min-height: 150px;
+    height:150px;
+    .prizes{
+      margin-left: 10%;
+      margin-top: 18px;
+
+      .prize{
+        background-color: #E8E8E8;
+        display: inline-block;
+        margin-right: 50px;
+        .prize-image{
+          width:58px;
+          float: left;
+          padding-top: 2.5px;
+          padding-left: 6px;
+        }
+
+        .item-info{
+          overflow: hidden;
+          padding-left: 10px;
+          float: left;
+          padding-top: 6px;
+          h4, p{
+            margin: 0;
+          }
+          h4{
+            font-size: 0.9em;
+          }
+          p{
+            font-size:0.7em;
+          }
+
+          @media all and (max-width: $breakpoint-small){
+            display:none;
+          }
+        }
+
+        .winner{
+          float:left;
+          background-color:$first-color;
+          border-bottom-left-radius: 50%;
+          border-bottom-right-radius: 50%;
+          padding-top: 10px;
+          position: relative;
+          left: 27px;
+          img{
+            border-radius: 50%;
+            width:50px;
+            padding: 5px;
+            padding-bottom: 2px;
+
+          }
+        }
+      }
+    }
+  }
+}

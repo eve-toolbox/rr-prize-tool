@@ -1,4 +1,4 @@
-<?php namespace App\Http\Controllers;
+<?php namespace rrPrizeTool\Http\Controllers;
 
 class ItemController extends Controller {
 

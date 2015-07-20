@@ -1,0 +1,47 @@
+header{
+  width:100%;
+  background-color:$first-color;
+
+  .container-1-2{
+    margin: 5px 25%;
+
+    .wordmark{
+      position:relative;
+      top:5px;
+
+      @media all and (max-width:$breakpoint-small){
+        top:2px;
+        width:105px;
+      }
+    }
+  }
+
+  .avatar{
+    float:right;
+    position:relative;
+    right: 10px;
+    img{
+      width:65px;
+      border-radius:50%;
+
+      position:relative;
+      left:10px;
+
+      @media all and (max-width:$breakpoint-small){
+        width:45px;
+        left:10px;
+      }
+    }
+
+  .nav{
+    float:right;
+    li{
+      display:inline;
+
+      color:white;
+      font-family: $standard-font;
+      font-size: 1.1em;
+    }
+  }
+}
+}

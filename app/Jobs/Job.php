@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Jobs;
+namespace rrPrizeTool\Jobs;
 
 use Illuminate\Bus\Queueable;
 

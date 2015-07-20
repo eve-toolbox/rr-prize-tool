@@ -1,0 +1,60 @@
+/* Global Styles */
+
+/* Table of Contents */
+/* Variable Declarations */
+  /* 1. Color Variable Declarations */
+  /* 2. Font Variable Declarations */
+  /* 3. Breakpoint Variable Declarations */
+/* II. Global Styling */
+  /* 1. Font Styling */
+	/* 2. Container Styling */
+/* ------------------------------------------------------------- */
+/* I. Variable Declarations */
+/* ------------------------------------------------------------- */
+
+/* 1. Color Variable Declarations */
+$first-color: #32475B;
+$second-color: #395168;
+$third-color: #243341;
+$fourth-color: #5C83A7;
+$fifth-color: #7FB4E7;
+$sixth-color: #8E9BA7;
+$seventh-color: #636C74;
+$eighth-color: #808080;
+
+/* 2. Font Variable Declarations */
+
+// Importing PT Sans + Oswald from Google Web Fonts
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|Oswald:300,400,700);
+
+$header-font: "Oswald", sans-serif;
+$standard-font: "PT Sans", sans-serif;
+
+/* 3. Breakpoint Variable Declarations */
+$breakpoint-small: 30em;
+$breakpoint-medium: 41.875em;
+$breakpoint-large: 50em;
+
+
+/* ------------------------------------------------------------- */
+/* I. Default Styling */
+/* ------------------------------------------------------------- */
+
+/* 1. Font Styling */
+body, p{
+  font-family:$standard-font;
+}
+.header-font{
+  font-family:$header-font;
+}
+
+/* 2. Container Styling */
+.container{
+	padding: 5px 12.5%;
+}
+
+/* 3. Link Reset */
+a, a:hover, a:active, a:visited{
+  text-decoration: none;
+
+}

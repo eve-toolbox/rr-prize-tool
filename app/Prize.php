@@ -4,6 +4,10 @@ namespace rrPrizeTool;
 
 use Illuminate\Database\Eloquent\Model;
 
+use rrPrizeTool\Item;
+use rrPrizeTool\Drawing;
+use rrPrizeTool\Winner;
+
 class Prize extends Model {
 
 	protected $table = 'prizes';

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Events;
+namespace rrPrizeTool\Events;
 
 abstract class Event
 {

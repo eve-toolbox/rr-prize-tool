@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace rrPrizeTool\Providers;
 
 use Illuminate\Support\ServiceProvider;
 
